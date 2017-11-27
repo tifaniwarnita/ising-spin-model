@@ -1,12 +1,8 @@
-from mpmath import tanh
 from scipy.optimize import fsolve
 import math
 import matplotlib.pyplot as plt
 import numpy as np
-import pylab
-import numpy
 import random
-
 
 # Constants
 J = 1
@@ -41,7 +37,6 @@ def spin_avg_i_mfa(i, spins, T):
 	return res
 
 # (b) CAVITY METHOD
-# Basic idea of mean-field theory is to set the fluctuations into zero.
 def spin_avg_i_cavity(i, spins, T):
 	z = 0
 	neighbours = 0
